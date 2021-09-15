@@ -1,0 +1,521 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    
+}
+.fondo__contenedor{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 100%;
+}
+       /* Encabezado */
+
+.encabezado__barranegra{
+    width: 100%;  
+    height: 100px;
+
+}
+
+.menu--barranegra{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;   
+    position:fixed;
+
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    
+    z-index: 3;
+}
+.menu--barranegra img{
+    width:10em;
+    
+   
+}
+
+.menu--barranegra a{
+    text-decoration: none;
+    padding: 0.5em;
+    max-height: 46px;
+    border-radius: 5px;
+    font-size:1em;
+    
+    
+    background-color: #e04c19;
+    color: black;
+    margin-top: 30px;
+
+    transition: 0.5s all ease-in-out;
+}
+
+.menu--barranegra a:hover{
+    background-color:rgb(238, 165, 30); 
+    color:rgb(27, 24, 24) ;
+    transform: scale(1.1,1.1);
+    font-size: 1.2em;
+
+   
+}
+
+@media screen and (max-width:750px){
+    .menu--barranegra a{
+     background:none;
+     color:#e04c19;
+     line-height: 10%;
+     font-size: 0.8em
+    }
+    
+    .menu--barranegra img{
+        width:25%;
+    }
+    
+} 
+
+@media screen and (max-width:570px){
+    .menu--barranegra img{
+        position: absolute;
+        opacity: 0;
+    } 
+
+}
+
+     /* fin de encabezado */
+
+
+      /* video y logo */
+
+.video__logo{
+  margin: 0.9em 0;
+  
+}
+
+.video--promocion{
+   width: 100%;
+   text-align: center;
+   padding-bottom: 200px;
+   
+}
+.video--promocion:hover{
+    font-size: 1.2em;
+   background-color: rgb(238, 165, 30);
+   color: black; 
+   transition: 0.5s all ease-in-out;
+}
+
+
+
+.video--promocion video{
+  width: 100%;
+  
+}
+
+.video--promocion img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width:500px;
+    
+
+    position: relative;
+    bottom:8.6em;
+    opacity:  0.6;
+    
+}
+.video--promocion h1{
+    text-align: center;
+    width: 100%;
+}
+
+
+@media all and (max-width:400px) {
+
+    .video--promocion img{
+        width:80%;
+        max-width: 200px;
+        
+    }
+}
+@media all and (min-width:400px) and (max-width:600px) {
+    .video--promocion img{
+        width: 40%;
+        position: relative;
+        bottom:200px;
+    }
+    
+}
+@media all and (min-width:600px) and (max-width:800px) {
+    .video--promocion img{
+        width: 40%;
+        position: relative;
+        bottom:300px;
+    }
+    
+}
+@media all and (min-width:800px) and (max-width:1200px) {
+    .video--promocion img{
+        width: 45%;
+        position: relative;
+        bottom:400px;
+    }
+    
+}
+
+
+@media all and (min-width:1200px) and (max-width:1700px) {
+    .video--promocion img{
+        width: 45%;
+        position: relative;
+        bottom:600px;
+    }
+    
+}
+
+        /* fin de video y logo */
+
+
+         /* historia  buffalo img */
+  
+.imagen--dehistoria{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+.imagen--dehistoria img{
+    width: 100%;
+    max-width: 500px;
+    
+}
+.imagen--dehistoria img:nth-child(1){
+    height: 500px;
+    margin-left: 10px;
+}
+
+
+.tres {
+    display: inline;
+    order:2;
+    background: #e04c19;
+    max-width: 400px;
+    text-align: center;
+    padding-top: 100px;
+}
+strong{
+    font-size: 1.5em;
+}
+
+.imagen--dehistoria :hover{
+   font-size: 1.2em;
+   background-color: rgb(238, 165, 30);
+   color: black; 
+}
+   
+.dos{
+    order:3;
+}
+
+@media all and (max-width:1197px){
+    .imagen--dehistoria img{
+        max-width: none;
+    }
+    .imagen--dehistoria img:nth-child(1){
+        height: 200px;
+        margin-left:0;
+    }
+    .tres{
+       max-width: none;
+       padding-top: 2px;
+    }
+}
+@media all and (min-width:500px){
+.imagen--dehistoria img:nth-child(1) {
+       height: 500px;
+    }
+}       
+        /* fin de historia buffalo */
+
+
+        /* nosotros */
+
+.somos__buffalo--soldier{
+    width: 100%;
+    display: flex;
+    flex-wrap:row;
+    flex-wrap: wrap;
+}   
+.img__somos img{
+    width: 100%;
+   max-width: 600px;
+}
+.parrafo__somos{
+    text-align: center;
+    padding: 15px 0;
+    max-width: 500px;
+    background:#e04c19 ;
+    
+}
+.parrafo__somos h3{
+    font-size: 1.4em;
+    padding-bottom: 20px;
+}
+
+.parrafo__somos :nth-child(2){
+    padding-bottom: 20px;
+}
+
+.parrafo__somos:hover{
+   font-size: 1.4em;
+   background-color: rgb(238, 165, 30);
+   color: black; 
+}
+
+
+
+@media all and (min-width:530px) and (max-width:1120px){
+    .img__somos img,.parrafo__somos{
+        max-width: none;
+    }
+     
+}
+@media all and (min-width:1200px){
+    .somos__buffalo--soldier{
+        margin-left:300px;
+    }
+}
+     /* fin de nosotros */
+      
+
+     /* galeria */
+     
+     .galeria{
+         overflow-x: hidden;
+     }
+     .contenedor{
+         width:90% ;
+         margin: auto;
+         overflow-x:hidden ;
+         margin-bottom: 40px;
+     }
+
+    .contenedor ul{
+        padding:0;
+        display: flex;
+        width: 400%;
+        
+        animation: cambio 7s infinite alternate;
+    }
+
+    .contenedor li{
+        list-style: none;
+        width: 100%;
+        
+    }
+
+    .contenedor li img{
+        width: 100%;
+        max-width: 900px;
+    }
+  
+
+    @keyframes cambio {
+       0% {margin-left:0;}
+       20% {margin-left:0;}
+
+       25% {margin-left:-100%;}
+       45% {margin-left:-100%;}
+
+       50% {margin-left:-200%;}
+       70% {margin-left:-200%;}
+
+       75% {margin-left:-300%;}
+       100% {margin-left:-300%;}
+    }
+    
+    @media all and (max-width: 1120px){
+        .contenedor li img{
+            width: 100%;
+        }
+    }
+
+    .h33{
+        text-align: center;
+        font-size: 2em;
+        margin: 30px 0;
+        color: rgb(238, 165, 30);
+    }
+               /* fin de Galeria */
+   
+
+               /* contacto */
+    
+.contacto_contenedor{
+    background: #e04c19;
+    border-radius: 20px;
+
+    margin: auto ;
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+}
+
+.contacto_contenedor:hover{
+    font-size: 1.1em;
+    background: rgb(238, 165, 30) ;
+    color: black;
+   
+    
+    
+}
+
+.h2--contacto {
+   text-align: center;
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.h4--direccion{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.horarios{
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.contacto--telefonico{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.correo{
+    width: 100%;
+    background: none;
+    border-radius: 20px;
+    border-color: #e04c19;;
+    border:2 solid;
+    font-family: 'Calibri';
+    color: white;
+}
+.correo:hover{
+    border-color:rgb(238, 165, 30);
+}
+.boton{
+    background:#e04c19 ;
+    color: white;
+    border: none;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.boton:hover{
+    background:rgb(238, 165, 30) ;
+}
+
+
+@media all and (min-width: 790px){
+    .contacto_contenedor{
+        border-radius: 150px;
+        width: 80%;
+        
+    }
+     
+    .h4--direccion,.horarios,.contacto--telefonico{
+        text-align:start;
+        flex-direction: row;
+        
+    }
+
+    .h4--direccion{
+        position: relative;
+        left: 50px;
+        top: 50px;
+    }
+
+     .horarios{
+
+         position: relative;
+         left: 350px;
+         bottom: 50px;
+         margin-left:20px ;
+         
+     }
+     .horarios p{
+        margin-bottom: 1.2em ;
+     }
+ 
+     .contacto--telefonico{
+        position: relative;
+        left: 50px;
+        bottom: 120px;
+     }
+
+     
+    form{
+        position: relative;
+        left: 720px;
+        bottom:400px;
+        
+    }
+    .formulario{
+        width: 30%;
+        background:rgba(0, 0, 0, 0.70);
+        padding: 30px;
+        border-radius: 10px;
+    }
+  
+}
+
+@media all and (max-width: 790px){
+    .contacto_contenedor{
+        height: 710px;
+    }
+    .formulario{
+        text-align: center;
+        
+         width: 80%;
+         background:rgba(0, 0, 0, 0.70);
+         padding: 30px;
+         border-radius: 10px;
+         margin: auto;
+    }
+}
+    
+
+       /* fin de contacto */
+
+          /*  footer */
+
+    .footer{
+        width:100%;
+        margin-top: 10px;
+        padding: 50px 0;
+        background: rgb(0, 0, 0);
+    }   
+    
+    .logo--final img{
+        display: block;
+        width: 10em;
+        margin: auto;
+    }
+    .copy{
+        color: rgb(238, 165, 30);
+        text-align: center;
+    }
+              /* fin footer */
